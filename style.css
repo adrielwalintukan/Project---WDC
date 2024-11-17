@@ -1,5 +1,5 @@
 body {
-    background-color: #9ac1dc;
+    background-color: #b7cdd9;
     font-family: Arial, sans-serif;
 }
 
@@ -81,9 +81,9 @@ body {
 .text-center {
     position: relative;
     z-index: 1;
-    color: white;
+    color: #4f627e;
     margin-top: 0;
-    text-shadow: 2px 2px 7px rgba(0, 0, 0, 0.7);
+    text-shadow: 2px 2px 7px rgba(171, 178, 211, 0.7);
 }
 
 .img-fluid {
@@ -91,33 +91,29 @@ body {
     width: 100%;
 }
 
-.footer {
-    background-color: #6e8bab;
-    color: white;
-    padding: 20px 0;
-    text-align: center;
-}
-.footer a {
-    color: white;
-    text-decoration: none;
-}
-.footer a:hover {
-    text-decoration: underline;
-}
-.map {
-    border-radius: 15px;
+.container {
+    white-space: nowrap;
     overflow: hidden;
 }
-
 .text-awal {
     position: relative;
     z-index: 1;
-    color: #6e8bab;
+    color: #435265;
     margin-top: 10px;
-    text-shadow: 1px 1px 0px black, 
-    -1px -1px 0px white, 
-    1px -1px 0px black, 
-    -1px 1px 0px white;
+    text-shadow: 1px 1px 0px #435265, 
+                -1px -1px 0px #b7cdd9, 
+                1px -1px 0px #435265, 
+                -1px 1px 0px #b7cdd9;
+    overflow: hidden;
+    animation: moveText 10s linear infinite;
+}
+@keyframes moveText {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
 }
 
 .input-group {
@@ -175,6 +171,24 @@ body {
     opacity: 1;
 }
 
+.footer {
+    background-color: #435265;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+.footer a {
+    color: white;
+    text-decoration: none;
+}
+.footer a:hover {
+    text-decoration: underline;
+}
+.map {
+    border-radius: 15px;
+    overflow: hidden;
+}
+
 /* Tentang Kami */
 .tentangkami {
     padding: 20px;
@@ -207,4 +221,71 @@ body {
     left: 10px;
     top: 15px;
     font-size: 20px;
+}
+
+.hasil-pencarian {
+    margin-top: 10px;
+    margin-left: 70px;
+    color: #435265;
+}
+
+
+/* Styling Kalkulator Sewa */
+.calculator-container {
+    max-width: 500px;
+    margin: 2rem auto;
+    padding: 1rem;
+    background: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.calculator-container h2 {
+    text-align: center;
+    color: #343a40;
+    margin-bottom: 1rem;
+}
+
+.form-group {
+    margin-bottom: 1rem;
+}
+
+.form-label {
+    font-weight: bold;
+    color: #333;
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+.form-control {
+    width: 100%;
+    padding: 0.5rem;
+    font-size: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.btn-calculate {
+    display: block;
+    width: 100%;
+    padding: 0.75rem;
+    background-color: #456587;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    cursor: pointer;
+    margin-top: 1rem;
+}
+
+.btn-calculate:hover {
+    background-color: #255384;
+}
+
+.result {
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #364f64;
+    margin-top: 1rem;
 }

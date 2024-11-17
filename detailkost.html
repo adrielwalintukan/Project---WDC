@@ -28,20 +28,33 @@
         <!-- Content -->
         <div class="container mt-4">
             <div class="row">
-                <div class="col-12">
-                    <div id="kostImage" class="mb-3">
-                        <img class="img-fluid" alt="Gambar Kost" style="height: 300px; width: 400px;">
+                <!-- Gambar Kost dan Info di sebelah kanan -->
+                <div class="col-md-6 d-flex flex-column align-items-center">
+                    <div id="kostImageCarousel" class="carousel slide mb-3" data-bs-ride="carousel">
+                        <div class="carousel-inner" id="kostImageContainer">
+                            <!-- Gambar kost akan dimasukkan secara dinamis melalui JavaScript -->
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#kostImageCarousel" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#kostImageCarousel" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
                     </div>
                 </div>
-            </div>
-
-            <div class="row">
-                <div class="col-12">
+                <div class="col-md-6 kost-info-background">
                     <h2 id="kostName" class="mb-0">Nama Kost</h2>
                     <p id="kostType" class="mb-0">Tipe Kost</p>
                     <p id="kostPrice" class="mb-0">Harga</p>
+                    <h5 class="mt-4"><strong>Kontak Pemilik Kost:</strong></h5>
+                    <p id="kostContact" class="kontak-posisi">Kontak Pemilik Kost</p>
+                    <h5 class="mt-4"><strong>Alamat:</strong></h5>
+                    <p id="kostAddress" class="alamat-posisi">Alamat Kost</p>
                 </div>
             </div>
+
             <div class="row">
                 <div class="col-12">
                     <div class="card mt-4">
@@ -54,18 +67,6 @@
                             </ul>
                         </div>
                     </div>
-                </div>
-            </div>
-            <div class="row jarak">
-                <div class="col-12">
-                    <h5 class="mt-4"><strong>Kontak Pemilik Kost:</strong></h5>
-                    <p id="kostContact" class="kontak-posisi">Kontak Pemilik Kost</p>
-                </div>
-            </div>
-            <div class="row jarak">
-                <div class="col-12">
-                    <h5 class="mt-4"><strong>Alamat:</strong></h5>
-                    <p id="kostAddress" class="alamat-posisi">Alamat Kost</p>
                 </div>
             </div>
             <div class="jarak">

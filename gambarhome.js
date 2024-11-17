@@ -1,4 +1,3 @@
-// Bg-Slider Menu awal
 const images = [
     'url("gambar/unklab.jpg")',
     'url("gambar/kostWullur1.jpg")',
@@ -16,8 +15,6 @@ function changeBackground() {
     currentIndex = (currentIndex + 1) % images.length;
 }
 
-// Change background every 5 seconds
 setInterval(changeBackground, 5000);
 
-// Set initial background
 changeBackground();
